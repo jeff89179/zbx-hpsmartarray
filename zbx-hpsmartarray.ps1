@@ -62,9 +62,15 @@ if ($version) {
 }
 
 # HP Array Configuration Utility location
-$ssacli = "$env:ProgramFiles\Smart Storage Administrator\ssacli\bin\ssacli.exe"
+#$ssacli = "$env:ProgramFiles\Smart Storage Administrator\ssacli\bin\ssacli.exe"
+#if (! (Test-Path $ssacli)) {
+#    $ssacli = "$env:ProgramFiles\Compaq\Hpacucli\Bin\hpacucli.exe"
+#}
+
+# HP Array Configuration Utility location - using HP SSA 1.60.17.0
+$ssacli = "$env:ProgramFiles\hp\hpssacli\bin\hpssacli.exe"
 if (! (Test-Path $ssacli)) {
-    $ssacli = "$env:ProgramFiles\Compaq\Hpacucli\Bin\hpacucli.exe"
+    $ssacli = "$env:ProgramFiles\hp\hpssacli\bin\hpssacli.exe"
 }
 
 # Retrieve one Smart Array Controller info from given string
