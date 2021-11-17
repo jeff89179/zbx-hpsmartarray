@@ -71,6 +71,8 @@ Rebuilding
 In addition I've attached preconfigured Zabbix Template here, so you can use it in your environment. It's using Low Level Discovery functionality.   
 Have fun and rate it on [share.zabbix.com](https://share.zabbix.com/storage-devices/hp/hp-smart-array-controller) if you like it. =)
 
+- jeff89179 notes: in my case, I had to change the discovery types in the template from Zabbix Agent (Active) to Zabbix Agent in order for the discovery to work.
+
 **Tested with**:  
 HP SmartArray P800, Smart Array P420i, Smart Array P440ar, Smart Array B110i
 
